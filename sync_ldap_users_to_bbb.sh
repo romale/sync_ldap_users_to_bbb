@@ -3,8 +3,9 @@
 ############################################################################################
 #Script Name	: sync_ldap_users_to_bbb.sh
 #Description	: This script sync LDAP users to BigBlueButton (sqlite3 DB).
-#               : One-way. If sync was been before, script start
-#               : sync from new user created in LDAP (comparing "createtimestamp" attribute)
+#               : One-way. So, no need LDAP users registering in BBB. If sync was been 
+#               : before, script start sync from new user created in 
+#               : LDAP (comparing "createtimestamp" attribute)
 #               : For resync all LDAP users from scratch: echo "" > "$SYNC_STATUS_FILE"
 #Args           : No                                                                                          
 #Author       	: Alexander
